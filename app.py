@@ -21,10 +21,9 @@ def main() :
     </div>
     """
     st.markdown ( html, unsafe_allow_html=True )
-
-    oxygen = st.text_input ( "Oxygen", "Typer Here" )
-    humidity = st.text_input ( "humidity", "Typer Here" )
-    tempearture = st.text_input ( "tempearture", "Typer Here" )
+    oxygen = st.slider ( "Select Oxygen Level",0,100 )
+    humidity = st.slider ( "Select Humidity Level",0,100 )
+    tempearture = st.slider ( "Selct Tepearture Level",0,100 )
     safe = """
      <div style="background-color:#4D03F ;padding:10px">
     <h2 style="color:white;test-align:center;">YOUR FOREST IS SAFE! </h2>
